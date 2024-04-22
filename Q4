@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int occurrences(char *str, char c) {
+  int occur = 0;
+  int len = strlen(str);
+  for (int i = 0; i < len; i++) {
+    if (str[i] == c) {
+      occur++;
+    }
+  }
+  return occur;
+}
+
+int main() {
+  char str[100];
+  char c;
+
+  printf("Enter a string: ");
+  scanf("%s", &str);
+
+  printf("Enter the character: ");
+  scanf(" %c", &c);
+
+  printf("Occurrences of '%c' in %s are %d\n", c, str, occurrences(str, c));
+  return 0;
+}
