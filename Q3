@@ -1,0 +1,76 @@
+#include <stdio.h>
+
+int sortarr(int *arr, int len) {
+  for (int i = 0; i < len - 1; i++) {
+    for (int j = 0; j < len - i - 1; j++) {
+      if (arr[j] > arr[j + 1]) {
+        int temp = arr[j];
+        arr[j] = arr[j + 1];
+        arr[j + 1] = temp;
+      }
+    }
+  }
+  return arr;
+}
+
+int main() {
+  int len1, len2;
+
+  printf("Enter length of Array 1: ");
+  scanf("%d", &len1);
+
+  int arr1[len1];
+
+  for (int i = 0; i < len1; i++) {
+    printf("Enter element %d: ", i + 1);
+    scanf("%d", &arr1[i]);
+  }
+
+  printf("Array 1 is: ");
+  for (int i = 0; i < len1; i++) {
+    printf("%d ", arr1[i]);
+  }
+
+  printf("\nEnter length of Array 2: ");
+  scanf("%d", &len2);
+
+  int arr2[len2];
+
+  for (int i = 0; i < len2; i++) {
+    printf("Enter element %d: ", i + 1);
+    scanf("%d", &arr2[i]);
+  }
+
+  printf("\nArray 2 is: ");
+  for (int i = 0; i < len2; i++) {
+    printf("%d ", arr2[i]);
+  }
+
+  sortarr(arr1, len1);
+  printf("\nSorted Array 1: ");
+  for (int i = 0; i < len1; i++) {
+    printf("%d ", arr1[i]);
+  }
+
+  sortarr(arr2, len2);
+  printf("\nSorted Array 2: ");
+  for (int i = 0; i < len2; i++) {
+    printf("%d ", arr2[i]);
+  }
+
+  int len3=len1+len2;
+  int arr3[len3];
+  for (int i=0;i<len1;i++){
+    arr3[i]=arr1[i];
+  }
+  for (int i=0;i<len2;i++){
+    arr3[len1+i]=arr2[i];
+  }
+
+  sortarr(arr3, len3);
+  printf("\nSorted Array 3: ");
+  for (int i = 0; i < len3; i++) {
+    printf("%d ", arr3[i]);
+  }
+return 0;
+}
