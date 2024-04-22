@@ -1,0 +1,27 @@
+// C program to reverse the string in C using loops
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+	char str[100];
+    printf("Enter a string: ");
+    scanf("%s",str);
+    char str2[100];
+    strcpy(str2,str);
+	int len = strlen(str);
+
+	for (int i = 0, j = len - 1; i <= j; i++, j--) {
+		char temp = str[i];
+		str[i] = str[j];
+		str[j] = temp;
+	}
+
+    if(strcmp(str,str2)==0){
+        printf("%s is a Palindrome", str2);
+    }
+	else{
+        printf("%s is not a Palindrome", str2);
+	}
+	return 0;
+}
