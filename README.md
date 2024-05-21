@@ -20,10 +20,3 @@ it twice.
 16. Create a program to find the transpose of a matrix.
 17. Implement a function to find the median of an unsorted array.
 18. Write a program to count the number of vowels and consonants in a string.
-19. Create a function to generate all possible permutations of a string.
-20. Implement a program to find the largest sum contiguous subarray in an array.
-21. Write a function to check if a given number is prime or not.
-22. Create a program to rotate an array by a given number of positions.
-23. Implement a function to convert a string to uppercase without using library functions.
-24. Write a program to find the second largest element in an array.
-25. Create a function to reverse the words in a given string.
