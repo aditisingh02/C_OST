@@ -1,4 +1,4 @@
-//Q11 Write a program to find the intersection of two arrays.
+//Q12 Write a program to find the intersection of two arrays.
 
 #include <stdio.h>
 
