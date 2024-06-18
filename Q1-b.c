@@ -1,4 +1,4 @@
-// C program to reverse the string in C using loops
+//C program to reverse the string in C using loops
 #include <stdio.h>
 #include <string.h>
 
