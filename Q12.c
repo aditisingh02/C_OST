@@ -1,3 +1,5 @@
+//Q11 Write a program to find the intersection of two arrays.
+
 #include <stdio.h>
 
 void printArray(int arr[], int size) {
