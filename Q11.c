@@ -1,3 +1,5 @@
+//Implement a function to perform matrix multiplication.
+
 #include<stdio.h>
 
 int main(){
