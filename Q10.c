@@ -1,4 +1,4 @@
-#Q10 Create a function to check if two strings are anagrams of each other.
+//Q10 Create a function to check if two strings are anagrams of each other.
 
 #include <stdio.h>
 #define NO_OF_CHARS 256
