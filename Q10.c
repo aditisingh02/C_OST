@@ -1,3 +1,4 @@
+#Write a program to reverse a string without using any built-in functions.
 
 #include <stdio.h>
 #define NO_OF_CHARS 256
