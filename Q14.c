@@ -1,3 +1,4 @@
+//Q14 Implement a program to convert a decimal number to binary without using the built-in functions.
 #include <stdio.h>
 
 int main() {
